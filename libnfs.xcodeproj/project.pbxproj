@@ -7,9 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FE0472A2A441ACB0061E58E /* libnfs.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047292A441ACB0061E58E /* libnfs.m */; };
-		5FE0472B2A441ACB0061E58E /* libnfs.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5FE047282A441ACB0061E58E /* libnfs.h */; };
+		5FE0476A2A441B590061E58E /* nfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047332A441B590061E58E /* nfs.c */; };
+		5FE0476B2A441B590061E58E /* fh.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047342A441B590061E58E /* fh.c */; };
+		5FE0476C2A441B590061E58E /* xdr.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047362A441B590061E58E /* xdr.c */; };
+		5FE0476D2A441B590061E58E /* fh_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047382A441B590061E58E /* fh_cache.c */; };
+		5FE0476E2A441B590061E58E /* user.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0473A2A441B590061E58E /* user.c */; };
+		5FE047732A441B590061E58E /* exports.l in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047412A441B590061E58E /* exports.l */; };
+		5FE047742A441B590061E58E /* exports.y in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047422A441B590061E58E /* exports.y */; };
+		5FE047752A441B590061E58E /* lex.yy.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047432A441B590061E58E /* lex.yy.c */; };
+		5FE047772A441B590061E58E /* password.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047492A441B590061E58E /* password.c */; };
+		5FE047782A441B590061E58E /* mount.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0474B2A441B590061E58E /* mount.c */; };
+		5FE047792A441B590061E58E /* afssupport.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0474C2A441B590061E58E /* afssupport.c */; };
+		5FE0477B2A441B590061E58E /* readdir.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0474F2A441B590061E58E /* readdir.c */; };
+		5FE0477C2A441B590061E58E /* attr.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047522A441B590061E58E /* attr.c */; };
+		5FE0477D2A441B590061E58E /* afsgettimes.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047532A441B590061E58E /* afsgettimes.c */; };
+		5FE0477E2A441B590061E58E /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047562A441B590061E58E /* error.c */; };
+		5FE0477F2A441B590061E58E /* daemon.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047582A441B590061E58E /* daemon.c */; };
+		5FE047802A441B590061E58E /* locate.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0475A2A441B590061E58E /* locate.c */; };
+		5FE047812A441B590061E58E /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0475C2A441B590061E58E /* md5.c */; };
+		5FE047822A441B590061E58E /* fd_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047602A441B590061E58E /* fd_cache.c */; };
+		5FE047842A441B590061E58E /* cluster.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047672A441B590061E58E /* cluster.c */; };
+		5FE047BB2A44219E0061E58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE047B92A44219E0061E58E /* Main.storyboard */; };
+		5FE047BD2A44219F0061E58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FE047BC2A44219F0061E58E /* Assets.xcassets */; };
+		5FE047C02A44219F0061E58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE047BE2A44219F0061E58E /* LaunchScreen.storyboard */; };
+		5FE047C22A44219F0061E58E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE047C12A44219F0061E58E /* main.m */; };
+		5FE047C92A4421A90061E58E /* liblibnfs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE047252A441ACB0061E58E /* liblibnfs.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FE047C62A4421A40061E58E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FE0471D2A441ACB0061E58E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FE047242A441ACB0061E58E;
+			remoteInfo = libnfs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5FE047232A441ACB0061E58E /* CopyFiles */ = {
@@ -18,7 +51,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				5FE0472B2A441ACB0061E58E /* libnfs.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +58,53 @@
 
 /* Begin PBXFileReference section */
 		5FE047252A441ACB0061E58E /* liblibnfs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibnfs.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FE047282A441ACB0061E58E /* libnfs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libnfs.h; sourceTree = "<group>"; };
-		5FE047292A441ACB0061E58E /* libnfs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libnfs.m; sourceTree = "<group>"; };
+		5FE047322A441B590061E58E /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		5FE047332A441B590061E58E /* nfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nfs.c; sourceTree = "<group>"; };
+		5FE047342A441B590061E58E /* fh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fh.c; sourceTree = "<group>"; };
+		5FE047352A441B590061E58E /* attr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attr.h; sourceTree = "<group>"; };
+		5FE047362A441B590061E58E /* xdr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xdr.c; sourceTree = "<group>"; };
+		5FE047372A441B590061E58E /* daemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = daemon.h; sourceTree = "<group>"; };
+		5FE047382A441B590061E58E /* fh_cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fh_cache.c; sourceTree = "<group>"; };
+		5FE047392A441B590061E58E /* locate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locate.h; sourceTree = "<group>"; };
+		5FE0473A2A441B590061E58E /* user.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = user.c; sourceTree = "<group>"; };
+		5FE0473C2A441B590061E58E /* exports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exports.h; sourceTree = "<group>"; };
+		5FE047412A441B590061E58E /* exports.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = exports.l; sourceTree = "<group>"; };
+		5FE047422A441B590061E58E /* exports.y */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; path = exports.y; sourceTree = "<group>"; };
+		5FE047432A441B590061E58E /* lex.yy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lex.yy.c; sourceTree = "<group>"; };
+		5FE047452A441B590061E58E /* y.tab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = y.tab.h; sourceTree = "<group>"; };
+		5FE047472A441B590061E58E /* backend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backend.h; sourceTree = "<group>"; };
+		5FE047482A441B590061E58E /* fd_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fd_cache.h; sourceTree = "<group>"; };
+		5FE047492A441B590061E58E /* password.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = password.c; sourceTree = "<group>"; };
+		5FE0474A2A441B590061E58E /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		5FE0474B2A441B590061E58E /* mount.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mount.c; sourceTree = "<group>"; };
+		5FE0474C2A441B590061E58E /* afssupport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = afssupport.c; sourceTree = "<group>"; };
+		5FE0474F2A441B590061E58E /* readdir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readdir.c; sourceTree = "<group>"; };
+		5FE047502A441B590061E58E /* exports */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = exports; sourceTree = "<group>"; };
+		5FE047512A441B590061E58E /* xdr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xdr.h; sourceTree = "<group>"; };
+		5FE047522A441B590061E58E /* attr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attr.c; sourceTree = "<group>"; };
+		5FE047532A441B590061E58E /* afsgettimes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = afsgettimes.c; sourceTree = "<group>"; };
+		5FE047542A441B590061E58E /* fh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fh.h; sourceTree = "<group>"; };
+		5FE047552A441B590061E58E /* nfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nfs.h; sourceTree = "<group>"; };
+		5FE047562A441B590061E58E /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
+		5FE047572A441B590061E58E /* fh_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fh_cache.h; sourceTree = "<group>"; };
+		5FE047582A441B590061E58E /* daemon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = daemon.c; sourceTree = "<group>"; };
+		5FE047592A441B590061E58E /* user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = "<group>"; };
+		5FE0475A2A441B590061E58E /* locate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = locate.c; sourceTree = "<group>"; };
+		5FE0475B2A441B590061E58E /* afssupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = afssupport.h; sourceTree = "<group>"; };
+		5FE0475C2A441B590061E58E /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		5FE0475D2A441B590061E58E /* password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = password.h; sourceTree = "<group>"; };
+		5FE0475E2A441B590061E58E /* mount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mount.h; sourceTree = "<group>"; };
+		5FE0475F2A441B590061E58E /* backend_unix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backend_unix.h; sourceTree = "<group>"; };
+		5FE047602A441B590061E58E /* fd_cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fd_cache.c; sourceTree = "<group>"; };
+		5FE047612A441B590061E58E /* readdir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readdir.h; sourceTree = "<group>"; };
+		5FE047652A441B590061E58E /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cluster.h; sourceTree = "<group>"; };
+		5FE047672A441B590061E58E /* cluster.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cluster.c; sourceTree = "<group>"; };
+		5FE047852A441E7A0061E58E /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		5FE047B12A44219E0061E58E /* nfsserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nfsserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE047BA2A44219E0061E58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FE047BC2A44219F0061E58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FE047BF2A44219F0061E58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FE047C12A44219F0061E58E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,14 +115,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FE047AE2A44219E0061E58E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE047C92A4421A90061E58E /* liblibnfs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5FE0471C2A441ACB0061E58E = {
 			isa = PBXGroup;
 			children = (
-				5FE047272A441ACB0061E58E /* libnfs */,
+				5FE047312A441B590061E58E /* libnfs */,
+				5FE047B22A44219E0061E58E /* nfsserver */,
 				5FE047262A441ACB0061E58E /* Products */,
+				5FE047C82A4421A90061E58E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,17 +140,84 @@
 			isa = PBXGroup;
 			children = (
 				5FE047252A441ACB0061E58E /* liblibnfs.a */,
+				5FE047B12A44219E0061E58E /* nfsserver.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5FE047272A441ACB0061E58E /* libnfs */ = {
+		5FE047312A441B590061E58E /* libnfs */ = {
 			isa = PBXGroup;
 			children = (
-				5FE047282A441ACB0061E58E /* libnfs.h */,
-				5FE047292A441ACB0061E58E /* libnfs.m */,
+				5FE047532A441B590061E58E /* afsgettimes.c */,
+				5FE0474C2A441B590061E58E /* afssupport.c */,
+				5FE0475B2A441B590061E58E /* afssupport.h */,
+				5FE047522A441B590061E58E /* attr.c */,
+				5FE047352A441B590061E58E /* attr.h */,
+				5FE0475F2A441B590061E58E /* backend_unix.h */,
+				5FE047472A441B590061E58E /* backend.h */,
+				5FE047672A441B590061E58E /* cluster.c */,
+				5FE047652A441B590061E58E /* cluster.h */,
+				5FE0473B2A441B590061E58E /* Config */,
+				5FE047852A441E7A0061E58E /* config.h */,
+				5FE047582A441B590061E58E /* daemon.c */,
+				5FE047372A441B590061E58E /* daemon.h */,
+				5FE047562A441B590061E58E /* error.c */,
+				5FE047322A441B590061E58E /* error.h */,
+				5FE047502A441B590061E58E /* exports */,
+				5FE047602A441B590061E58E /* fd_cache.c */,
+				5FE047482A441B590061E58E /* fd_cache.h */,
+				5FE047382A441B590061E58E /* fh_cache.c */,
+				5FE047572A441B590061E58E /* fh_cache.h */,
+				5FE047342A441B590061E58E /* fh.c */,
+				5FE047542A441B590061E58E /* fh.h */,
+				5FE0475A2A441B590061E58E /* locate.c */,
+				5FE047392A441B590061E58E /* locate.h */,
+				5FE0475C2A441B590061E58E /* md5.c */,
+				5FE0474A2A441B590061E58E /* md5.h */,
+				5FE0474B2A441B590061E58E /* mount.c */,
+				5FE0475E2A441B590061E58E /* mount.h */,
+				5FE047332A441B590061E58E /* nfs.c */,
+				5FE047552A441B590061E58E /* nfs.h */,
+				5FE047492A441B590061E58E /* password.c */,
+				5FE0475D2A441B590061E58E /* password.h */,
+				5FE0474F2A441B590061E58E /* readdir.c */,
+				5FE047612A441B590061E58E /* readdir.h */,
+				5FE0473A2A441B590061E58E /* user.c */,
+				5FE047592A441B590061E58E /* user.h */,
+				5FE047362A441B590061E58E /* xdr.c */,
+				5FE047512A441B590061E58E /* xdr.h */,
 			);
 			path = libnfs;
+			sourceTree = "<group>";
+		};
+		5FE0473B2A441B590061E58E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5FE0473C2A441B590061E58E /* exports.h */,
+				5FE047412A441B590061E58E /* exports.l */,
+				5FE047422A441B590061E58E /* exports.y */,
+				5FE047432A441B590061E58E /* lex.yy.c */,
+				5FE047452A441B590061E58E /* y.tab.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5FE047B22A44219E0061E58E /* nfsserver */ = {
+			isa = PBXGroup;
+			children = (
+				5FE047B92A44219E0061E58E /* Main.storyboard */,
+				5FE047BC2A44219F0061E58E /* Assets.xcassets */,
+				5FE047BE2A44219F0061E58E /* LaunchScreen.storyboard */,
+				5FE047C12A44219F0061E58E /* main.m */,
+			);
+			path = nfsserver;
+			sourceTree = "<group>";
+		};
+		5FE047C82A4421A90061E58E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +240,24 @@
 			productReference = 5FE047252A441ACB0061E58E /* liblibnfs.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		5FE047B02A44219E0061E58E /* nfsserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FE047C32A44219F0061E58E /* Build configuration list for PBXNativeTarget "nfsserver" */;
+			buildPhases = (
+				5FE047AD2A44219E0061E58E /* Sources */,
+				5FE047AE2A44219E0061E58E /* Frameworks */,
+				5FE047AF2A44219E0061E58E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FE047C72A4421A40061E58E /* PBXTargetDependency */,
+			);
+			name = nfsserver;
+			productName = nfsserver;
+			productReference = 5FE047B12A44219E0061E58E /* nfsserver.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +268,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					5FE047242A441ACB0061E58E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5FE047B02A44219E0061E58E = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -114,20 +289,88 @@
 			projectRoot = "";
 			targets = (
 				5FE047242A441ACB0061E58E /* libnfs */,
+				5FE047B02A44219E0061E58E /* nfsserver */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FE047AF2A44219E0061E58E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE047C02A44219F0061E58E /* LaunchScreen.storyboard in Resources */,
+				5FE047BD2A44219F0061E58E /* Assets.xcassets in Resources */,
+				5FE047BB2A44219E0061E58E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FE047212A441ACB0061E58E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FE0472A2A441ACB0061E58E /* libnfs.m in Sources */,
+				5FE047812A441B590061E58E /* md5.c in Sources */,
+				5FE047822A441B590061E58E /* fd_cache.c in Sources */,
+				5FE0477E2A441B590061E58E /* error.c in Sources */,
+				5FE0477F2A441B590061E58E /* daemon.c in Sources */,
+				5FE047802A441B590061E58E /* locate.c in Sources */,
+				5FE0476C2A441B590061E58E /* xdr.c in Sources */,
+				5FE047742A441B590061E58E /* exports.y in Sources */,
+				5FE0477C2A441B590061E58E /* attr.c in Sources */,
+				5FE047842A441B590061E58E /* cluster.c in Sources */,
+				5FE0476E2A441B590061E58E /* user.c in Sources */,
+				5FE0477B2A441B590061E58E /* readdir.c in Sources */,
+				5FE0476A2A441B590061E58E /* nfs.c in Sources */,
+				5FE047782A441B590061E58E /* mount.c in Sources */,
+				5FE0476B2A441B590061E58E /* fh.c in Sources */,
+				5FE0477D2A441B590061E58E /* afsgettimes.c in Sources */,
+				5FE047772A441B590061E58E /* password.c in Sources */,
+				5FE047792A441B590061E58E /* afssupport.c in Sources */,
+				5FE047752A441B590061E58E /* lex.yy.c in Sources */,
+				5FE047732A441B590061E58E /* exports.l in Sources */,
+				5FE0476D2A441B590061E58E /* fh_cache.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE047AD2A44219E0061E58E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE047C22A44219F0061E58E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FE047C72A4421A40061E58E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FE047242A441ACB0061E58E /* libnfs */;
+			targetProxy = 5FE047C62A4421A40061E58E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FE047B92A44219E0061E58E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FE047BA2A44219E0061E58E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FE047BE2A44219F0061E58E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FE047BF2A44219F0061E58E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5FE0472C2A441ACB0061E58E /* Debug */ = {
@@ -251,6 +494,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44L979X757;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libnfs/unfs3/Config",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -263,9 +510,63 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44L979X757;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libnfs/unfs3/Config",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		5FE047C42A44219F0061E58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44L979X757;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /Users/ethanarbuckle/Desktop/libnfs/;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanarbuckle.nfsserver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		5FE047C52A44219F0061E58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 44L979X757;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = /Users/ethanarbuckle/Desktop/libnfs/;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethanarbuckle.nfsserver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -287,6 +588,15 @@
 			buildConfigurations = (
 				5FE0472F2A441ACB0061E58E /* Debug */,
 				5FE047302A441ACB0061E58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FE047C32A44219F0061E58E /* Build configuration list for PBXNativeTarget "nfsserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE047C42A44219F0061E58E /* Debug */,
+				5FE047C52A44219F0061E58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
